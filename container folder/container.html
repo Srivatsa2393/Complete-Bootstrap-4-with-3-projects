@@ -5,56 +5,38 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <style>
-        .green{
+
+        .con{
           background-color: green;
-          height: 90vh;
+          height: 100vh;
         }
 
-        /*xs*/
-        @media (max-width: 575px){
-          .green{
-            background-color: red;
-            height: 90vh;
-          }
-        }
-        /*sm*/
-        @media (min-width: 576px) and (max-width: 767px){
-          .green{
-            background-color: orange;
-            height: 90vh;
-          }
+        .grey{
+          background-color: orange;
+          height: 200px;
         }
 
-        @media (min-width: 768px) and (max-width: 991px){
-          .green{
-            background-color: blue;
-            height: 90vh;
-          }
+        .gr{
+          background-color: red;
+          height: 200px;
         }
-
-        @media (min-width: 992px) and (max-width: 1199px){
-          .green{
-            background-color: black;
-            height: 90vh;
-          }
-        }
-
-        @media (min-width: 1200px) {
-          .green{
-            background-color: pink;
-            height: 90vh;
-          }
-        }
-
-
       </style>
 
     <title>Containers Bootstrap 4</title>
   </head>
   <body>
-    <h1>Srivatsa you'll work in Germany</h1>
-    <div class="container-fluid green">
-      Srivatsa
+    <div class="container con">
+      <div class="row">
+        <div class="col-sm-6 grey">
+          column1
+        </div>
+        <div class="col-sm-2 gr">
+          column2
+        </div>
+        <div class="col-sm-4 grey">
+          column1
+        </div>
+      </div>
     </div>
   </body>
 </html>
